@@ -9,3 +9,5 @@ exports.chunk = (a, n) => Array.from({ length: Math.ceil(a.length / n) }, (_, i)
 exports.sum = (a) => a.reduce((x, y) => x + y, 0);
 
 exports.capitalize = (s) => s ? s[0].toUpperCase() + s.slice(1) : s;
+
+exports.isEmpty = (v) => v == null || (v.length ?? 0) === 0;
